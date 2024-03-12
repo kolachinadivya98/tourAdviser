@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import Banner from './Components/Banner';
+import SearchBar from './shared/Search';
+import Tours from './Components/Tours';
+import Newsletter from './Components/Newsletter';
+// import TourCard from './shared/TourCard';
+// import Login from './Components/login/Login';
+// import Register from './Components/login/Register';
+import { BrowserRouter } from 'react-router-dom';
+// import Toursbooking from './Components/Toursbooking';
 import './App.css';
-
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <SearchBar />
+      {/* <Login /> */}
+      {/* <Register /> */}
+      <Tours />
+      {/* <TourCard /> */}
+      
+      {/* <Toursbooking /> */}
+      <Newsletter />
+       
     </div>
+    </BrowserRouter>
   );
 }
 
